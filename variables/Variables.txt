@@ -1,0 +1,29 @@
+## VARIABLES
+
+In JavaScript, there are three types of Variables:
+
+1. const -> Used to define constant values, it cannot be reassigned
+
+const a = 23
+a = 34         <-- This will raise an error
+
+2. let -> Used to define variable, can be reassigned
+
+let a = 34
+a = 56          <== This can be reassigned without raising any error
+
+3. var -> Same as let, but not used that much for now
+
+var a = 56
+a = 78
+
+## SCOPE
+
+In JavaScript, there are 2 types of scopes:
+
+1. Block-Scope - Imagine this like area inside the if,else,for,while block.
+2. Function-Scope - Imagine this like area inside the function block.
+
+- const and let variable types are block-scoped,meaning if they are declared inside if,else,for,while block then they will be valid till that scope.
+
+- var type will escape(leak) from if,else,for,while block meaning they will be valid even outside these blocks. Except Function block inside which it will stay valid making it an Function-Scoped.
