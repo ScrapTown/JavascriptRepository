@@ -1,0 +1,61 @@
+## STRING
+
+String is an immutable[cannot be changed] primitive datatype.
+
+A string can be declared using following methods:
+
+1. Single Quotes 
+
+console.log('Single Quotes')
+
+2. Double Quotes
+
+console.log("Double Quotes")
+
+3. Template Literal [Backticks] --> Used for String Interpolation
+
+console.log(`Template Literal`)
+
+The Template Literal is used for String Interpolation [ including variable values in the sentence].
+
+let name ="Om"
+console.log(`My name is ${name}`) >> My name is Om
+
+These are the string methods:
+
+1. Length  --> Returns the length of String
+
+let a = "Refrigerator"
+a.length  >> 12
+
+2. Substring  -->  Returns the substring based on specified indexes
+
+a.substring(0:5)  >> "Refri"
+
+3. Slice  --> Slice is same as substring except substring considers negative index as 0
+
+a.slice(0:-1)  >> "Refrigerato"  (Since, -1 represents character at last index)
+
+4. CharAt  --> Returns the character positioned at specified index
+
+a.charAt(0)  >> "R"
+
+5. indexOf  --> Returns the index of specified character
+
+a.indexOf("r") >> 3  (Only returns the index where the character occurred first)
+
+6. toUpperCase  --> Returns all the character in the string in UpperCase
+
+a.toUpperCase() >> REFRIGERATOR
+
+6. toLowerCase  --> Returns all the character in the string in LowerCase
+
+a.toLowerCase() >> refrigerator
+
+7. includes  --> return true if specified substring is present in string
+
+a.includes("rator")  >> true
+
+8. replace()  >> replaces the first occurrence of character or substring
+
+a.replace("r","o")  >> Refoigerator

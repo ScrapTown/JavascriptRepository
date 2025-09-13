@@ -1,0 +1,52 @@
+## DATATYPES
+
+There are two types of Datatypes:
+
+1. Primitive Datatype - [ Call by Value]
+2. Non-Primitive Datatype - [Call by Reference]
+
+In Primitive Datatype,a copy of value is used instead of an actual value,due to which changes in variable containing copy of value wont affect original value.
+
+Example -
+
+let a = 3     <-- Here, a contains 3
+let b = a     <-- Here,b contains the copy of value 3 stored in a
+
+So any changes made in b wont affect a 
+
+In Non-Primitive Datatype,changes in one variable using value of another variable will also affect values in original variable.
+
+Example - 
+let a = [1,2,3]  <-- Here,a is an array containing these values.
+let b = a        <-- Here,instead of using copy,b uses actual values stored in a
+b.push(4)        <-- So, any changes made in b will affect a [ In this case, 4 is pushed at the end of array b but it will also be pushed in array a]
+
+console.log(b)   >> [1,2,3,4]
+console.log(a)   >> [1,2,3,4]
+
+In Primitive Datatypes,there are 7 main types:
+
+1. Number -> all the numeric values [including int,float,etc]
+2. String -> all the characters under the single or double quotes
+3. Symbol -> defines special value which is immutable(cannot be changed)
+4. Boolean -> Either true or false
+5. null -> represents null values -- type of null will always be object even tho its null
+6. undefined -> represents the variable containing no value
+7. BigInt -> represents variable containing value > 2**53
+
+In Non-Primitive Datatypes, there are 3 main types:
+
+1. Array -> contains a list of values that can be accessed by indexes.
+
+let a = [1,2,3,4]
+
+2. Object -> contains key-value pairs.
+
+let b = {key1:value1,key2:value2}
+
+3. Function -> a block of code that performs specific task.
+
+let c = function def() {
+    console.log("Hello World)
+}
+
